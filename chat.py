@@ -1,8 +1,7 @@
 import openai
 import streamlit as st
 import random
-# openai.api_key = "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"
-openai.api_key = st.secrets.api_key
+openai.api_key = st.secrets["api_secret"]
 
 # prompt = st.text_input('Enter some keywords')
 place = ["遊樂園", "彩券行", "海邊", "相親會"]
